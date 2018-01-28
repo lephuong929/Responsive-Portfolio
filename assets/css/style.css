@@ -1,0 +1,363 @@
+
+body {
+	position: relative;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	height: 1000px;
+}
+
+header {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	border-bottom: solid #ccc 1px;
+	background:#fff;
+}
+
+h1 {
+	margin-top: 0;
+	line-height:100px;
+	width:260px;
+	margin-left:100px;
+	background:#4aaaa5;
+	color:#fff;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+h2 {
+	font-style: bold;
+}
+
+ul { 
+	position: absolute;
+	top: 20px;
+	left:900px;
+ }
+
+li {
+	display: inline;
+	border-right: 1px solid lightgrey;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+	font-family: Helvetica;
+	font-size: 17px;
+	color:#999;
+	text-align: center;
+	padding: 12px;
+}
+
+section {
+	float:left;
+	overflow:auto;
+	margin-top: 200px;
+	padding: 30px 30px 30px 30px;
+	background: #fff;
+	color:#777;
+}
+
+.About {
+	display: inline;
+	position: absolute;
+	border: solid #ddd 1px;
+	width: 650px;
+	margin-left:100px;
+	top: -150px;
+	float: left;
+	
+}
+
+#profile-pic {
+	display: inline;
+	float: left;
+	margin-right: 20px;
+}
+
+h2 {
+	padding-bottom: 20px;
+	margin-top: 0px;
+	color:#4aaaa5;
+	border-bottom: solid lightgrey 3px;
+}
+
+#Me {
+	padding-left: 40px;
+}
+
+.Sidebar {
+	position: absolute;
+	border: solid #ddd 1px;
+	width: 270px;
+	margin-left: 170px;
+	top: -150px;
+	right: 30px;
+}
+
+#icon-links {
+	text-align: center;
+}
+
+.LinkIcons {
+	align-items: center;
+  	display: flex;
+ 	flex-direction: row;
+  	justify-content: center;
+}
+
+.icons{
+  	display: block;
+}
+
+.Footer {
+	position: fixed;
+	bottom: 0;
+	border-top: solid #4aaaa5 5px;
+	height:75px;
+	width:100%;
+	background-color:#666;
+	clear:both;
+}
+
+#FooterText {
+	font-size: 12px;
+	color:#c1c1c1;
+	text-align: center;
+	line-height:75px;
+	margin: 0;
+}
+
+/* contact */
+
+.Contact {
+	position: absolute;
+	width: 650px;
+	border: 1px solid #ccc;
+	margin-left: 100px;
+	overflow: auto;
+	margin-bottom: 200px;
+	top: -50px;
+}
+
+.Contact-Sidebar {
+	position: absolute;
+	border: solid #ddd 1px;
+	width: 270px;
+	margin-left: 170px;
+	top: -50px;
+	right: 30px;
+}
+
+.portfolio {
+	position: absolute;
+	width: 650px;
+	border: 1px solid #ccc;
+	margin-left: 100px;
+	overflow: auto;
+	margin-bottom: 200px;
+	top: -150px;
+}
+
+.Portfolio-Sidebar {
+	position: absolute;
+	border: solid #ddd 1px;
+	width: 270px;
+	margin-left: 170px;
+	top: -150px;
+	right: 30px;
+}
+
+.picture {
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	display: inline;
+	position: relative;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.portfolio-description {
+	background-color: #4aaaa5;
+	color: white;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+  /* The body's bg color will be #333 */
+	body {
+    background-color: #333;
+  }
+
+  /* The wrapper's width will be 600px */
+	.container {
+    width: 600px;
+  }
+
+	ul {
+  	padding-right: 100px;
+  	margin-top: 20px;
+  }
+
+	li {
+  	margin-right: -100px;
+  }
+
+	a {
+  	margin-right: -100px;
+  }
+
+	.About {
+  	width: 400px;
+
+  }
+
+	.Sidebar {
+  	width: 200px;
+  	right: -300px;
+  }
+
+	#profile-pic {
+		width: 50%;
+		height: 50%;
+	}
+
+	.icons {
+		margin-right: 30px;
+		padding: 0;
+		padding-left: -10px;
+	}
+
+	.Contact {
+		width: 400px;
+	}
+
+	#ContactForm {
+		width: 375px;
+		margin-top: 20px;
+		position: relative;
+	}
+
+	#name {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#first_name {
+
+		margin-left: 10px;
+	}
+
+	#submit-button {
+		background-color: #4aaaa5;
+		color: white;
+		position: absolute;
+		bottom: -10px;
+		left: 5px;
+	}
+
+	.portfolio {
+		width: 400px;
+	}
+
+	.picture {
+		margin-top: 20px;
+		width: 400px;
+		position: relative;
+
+	}
+
+	.portfolio-description {
+		position: absolute;
+		bottom: 20px;
+		left: 0px;
+		width: 100%;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+	
+	header {
+		width: 700px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+
+	li {
+		margin-left: -95px;
+
+	}
+	.container {
+		display: block;
+	}
+
+	.About {
+		width: 100%;
+		display: block;
+	}
+
+	.Sidebar {
+		width: 100%;
+		display: block;
+	}
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 640px) {
+	
+	.container	{
+		width: 600px;
+
+	}
+
+	.About	{
+		width: 100%;
+		display: block;
+		margin: 0;
+		top: 50px;
+	}
+
+	#profile-pic {
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+
+	.Sidebar {
+		width: 100%;
+		top: 800px;
+		right: 0px;
+	}
+
+	.icons {
+		width: 33%;
+	}
+
+}
